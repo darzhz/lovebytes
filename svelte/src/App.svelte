@@ -20,10 +20,8 @@ $:feed = false;
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</svelte:head>
 	<video autoplay muted loop id="myVideo">
-  <source src="back.mp4" type="video/mp4">
+  <source src="back2.mp4" type="video/mp4">
 	</video>
-	<!-- {#each heart as heart} -->
-	<!-- {/each} -->
 {#if showMod}
 			<Modal on:close="{() => showMod = false}"/>
 {/if}
@@ -56,8 +54,8 @@ $:feed = false;
 		</div>
 	<div id="navi">
 		<ul>
-			<li><a href="#">Explore</a></li>
-			<li><a href="#">Confess</a></li>
+			<li><a href="#" on:click="{() =>{feed = true;showHero=false}}">Explore</a></li>
+			<li><a href="#" on:click="{() => showMod = true}">Confess</a></li>
 			<li><a href="#">My Match</a></li>
 		</ul>
 	</div>

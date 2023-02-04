@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+	<head>
+		${head}
+		<style>
+			${css}
+		</style>
+	</head>
+	<body>
+		${html}
+		<script>
+			${js}
+		</script>
+		<script>
+			new ${name}({
+				target: document.body,
+				props: ${props},
+				hydrate: true,
+			});
+		</script>
+	</body>
+</html>
